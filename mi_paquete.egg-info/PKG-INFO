@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mi_paquete
+Version: 0.1
+Summary: Una descripción corta de mi paquete
+Author: Tu Nombre
+Author-email: tu@email.com
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: pathlib
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
