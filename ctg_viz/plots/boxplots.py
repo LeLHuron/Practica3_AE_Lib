@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 
-def bx_plot(dataframe):
+def bx_plot(dataframe: pd.DataFrame) -> None:
     """
     Generates box plots for selected features in the given dataframe.
 

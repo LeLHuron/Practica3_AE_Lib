@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 
-def histogram_plot(dataframe):
+def histogram_plot(dataframe: pd.DataFrame) -> None:
     """
     Generates histograms for selected features in the given dataframe.
 

@@ -1,7 +1,8 @@
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def bar_plot(dataframe):
+def bar_plot(dataframe: pd.DataFrame) -> None:
     """
     Generates a bar plot from the given dataframe.
 

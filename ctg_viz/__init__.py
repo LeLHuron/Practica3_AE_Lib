@@ -10,6 +10,7 @@ Módulos:
  - utils: Funciones utilitarias para soporte adicional en el procesamiento y visualización de datos.
 """
 
+#Importación de módulos y funciones
 from .preprocessing import *
 from .categorization import categorize_data
 from utils import *
@@ -17,26 +18,11 @@ from utils import *
 from .plots.barplots import bar_plot
 from .plots.boxplots import bx_plot
 from .plots.density import density_plot
-from .plots.heatmap import *
-from .plots.histograms import *
+from .plots.heatmap import heatmap_plot
+from .plots.histograms import histogram_plot
 
-"""
-from setuptools import setup, find_packages
-
-setup(
-    name='mi_paquete',
-    version='0.1',
-    packages=find_packages(),
-    install_requires=[
-        'requests',
-    ],
-    description='Una descripción corta de mi paquete',
-    author='Tu Nombre',
-    author_email='tu@email.com',
-)
-"""
 __version__ = "0.1.0"
-__author__ = "Yo mero"
+__author__ = "Yo mero, ChatGPT, Claude y demás colegas (otras IA's y tutoriales de yutu)"
 
 __all__ = [
     

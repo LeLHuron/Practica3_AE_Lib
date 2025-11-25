@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 
-def heatmap_plot(dataframe):
+def heatmap_plot(dataframe: pd.DataFrame) -> None:
     """
     Generates a heatmap for the correlation matrix of the given dataframe.
 

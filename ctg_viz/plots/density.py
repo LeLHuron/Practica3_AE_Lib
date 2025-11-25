@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 
-def density_plot(dataframe):
+def density_plot(dataframe: pd.DataFrame) -> None:
     """
     Generates density plots for selected features in the given dataframe.
 
