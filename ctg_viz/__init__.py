@@ -11,15 +11,9 @@ Módulos:
 """
 
 #Importación de módulos y funciones
-from .preprocessing import *
-from .categorization import categorize_data
-from utils import *
-
-from .plots.barplots import bar_plot
-from .plots.boxplots import bx_plot
-from .plots.density import density_plot
-from .plots.heatmap import heatmap_plot
-from .plots.histograms import histogram_plot
+from .preprocessing import preprocessing
+from .categorization import check_data_completeness_Magdaleno_Flores_Nilton_Sebastian
+from .utils import upload_and_process_data
 
 __version__ = "0.1.0"
 __author__ = "Yo mero, ChatGPT, Claude y demás colegas (otras IA's y tutoriales de yutu)"

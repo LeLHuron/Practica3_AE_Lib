@@ -12,8 +12,9 @@ def heatmap_plot(dataframe: pd.DataFrame) -> None:
     Returns:
     None: Displays the heatmap.
     """
-    plt.figure(figsize=(12, 10))
-    correlation_matrix = dataframe.corr()
-    sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap='coolwarm', square=True, cbar_kws={"shrink": .8})
-    plt.title('Mapa de Calor de la Matriz de Correlación', fontsize=15)
-    plt.show()
+    plt.figure(figsize=(6, 5))
+    cols_corr = ['LB', 'AC', 'FM', 'UC', 'ASTV', 'MSTV', 'ALTV', 'MLTV', 'Width', 'NSP']
+    corr_matrix = dataframe[cols_corr].corr(method='spearman') # Se puede cambiar a 'spearman'
+
+    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+    plt.title('Mapa de Calor de Correlación (Spearman)', fontsize=15)

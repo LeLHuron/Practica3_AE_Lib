@@ -12,11 +12,10 @@ def bar_plot(dataframe: pd.DataFrame) -> None:
     Returns:
     None: Displays the bar plot.
     """
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(6, 4))
     class_counts = dataframe['CLASS'].value_counts().sort_values(ascending=True)
     class_counts.plot(kind='barh', color=sns.color_palette("husl", len(class_counts)))
     plt.title('Frecuencia de Clases Morfológicas (CLASS)', fontsize=15)
     plt.xlabel('Frecuencia')
     plt.ylabel('Clase')
     plt.grid(axis='x', linestyle='--', alpha=0.7)
-    plt.show()

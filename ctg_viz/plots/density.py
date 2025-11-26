@@ -12,8 +12,7 @@ def density_plot(dataframe: pd.DataFrame) -> None:
     Returns:
     None: Displays the density plots.
     """
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(6, 4))
     sns.kdeplot(data=dataframe, x='Width', hue='NSP', fill=True, palette="crest", alpha=0.5, linewidth=2)
     plt.title('Gráfico de Densidad de Width por Clase NSP', fontsize=15)
     plt.xlabel('Width')
-    plt.show()
