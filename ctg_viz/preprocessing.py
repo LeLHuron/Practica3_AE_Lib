@@ -1,11 +1,20 @@
 import pandas as pd
 import numpy as np
 
-"""
-Función de preprocesamiento de datos CTG.
-Realiza limpieza de datos, imputación de valores faltantes y tratamiento de outliers.
-"""
 def preprocessing(df_input : pd.DataFrame) -> pd.DataFrame:
+    """
+    Process the input DataFrame by handling missing values and outliers.
+    
+    Parameters
+    ----------
+    df_input : pd.DataFrame
+        DataFrame to be preprocessed.
+    
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame after preprocessing with missing values handled and outliers treated.
+    """
     df_proc = df_input.copy()
     
     # 1. Eliminar columnas con más del 20% de valores nulos

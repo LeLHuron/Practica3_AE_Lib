@@ -1,13 +1,18 @@
 import pandas as pd
 import numpy as np
-"""
-    Función general para verificar la completitud y calidad de los datos.
-    Parámetros:
-    df (pd.DataFrame): DataFrame a analizar.
-    Retorna:
-    pd.DataFrame: DataFrame con el análisis de completitud y calidad de cada columna.
-"""
-def check_data_completeness_Magdaleno_Flores_Nilton_Sebastian(df : pd.DataFrame) -> pd.DataFrame:    
+
+def check_data_completeness_Magdaleno_Flores_Nilton_Sebastian(df : pd.DataFrame) -> pd.DataFrame:
+    """
+
+    Function to analyze data completeness and quality for each column in a DataFrame.
+
+    Parameters:
+    df (pd.DataFrame): Dataframe to analyze.
+    
+    Returns:
+    pd.DataFrame: DataFrame with completeness and quality metrics for each column.
+
+    """
     res = []                                                        # Lista para almacenar resultados
     for col in df.columns:
         dtype = df[col].dtype                                       # Tipo de dato

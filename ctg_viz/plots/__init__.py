@@ -4,4 +4,5 @@ from .density import density_plot
 from .heatmap import heatmap_plot
 from .histograms import histogram_plot
 """
+Modules of plotting functions for CTG data visualization.
 """

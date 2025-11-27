@@ -13,7 +13,7 @@ setup(
         'seaborn'
     ],
     description='Una descripción corta de mi paquete',
-    author='Tu Nombre',
-    author_email='tu@email.com',
+    author='Nilton Magdaleno',
+    author_email='nilton_magdaleno@hotmail.com',
     
 )

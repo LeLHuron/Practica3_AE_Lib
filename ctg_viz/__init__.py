@@ -1,13 +1,13 @@
 """
-ctg_viz: Una biblioteca para la visualización y categorización de datos (CTG).
+ctg_viz: A library for CTG data visualization and processing.
 
-Proporciona herramientas para crear gráficos interactivos, preprocesar y categorizar datos.
+Provides tools for loading, preprocessing, categorizing, and visualizing CTG datasets.
 
-Módulos:
- - preprocessing: Funciones para limpiar y preparar datos para su análisis.
- - categorization: Función para clasificar y categorizar conjuntos de datos.
- - plots: Funciones para generar gráficos y visualizaciones de datos.
- - utils: Funciones utilitarias para soporte adicional en el procesamiento y visualización de datos.
+Modules included:
+ - preprocessing: Functions for cleaning and preparing CTG data.
+ - categorization: Functions for categorizing and analyzing data completeness.
+ - plots: Functions for generating various types of plots for data visualization.
+ - utils: Functions for data upload and utility operations.
 """
 
 #Importación de módulos y funciones
