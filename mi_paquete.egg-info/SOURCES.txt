@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 ctg_viz/__init__.py
 ctg_viz/categorization.py

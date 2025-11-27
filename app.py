@@ -3,15 +3,13 @@ from ctg_viz import preprocessing, categorization
 from ctg_viz.plots import barplots, boxplots, density, heatmap, histograms
 """
 import streamlit as st
-import plotly.express as px
-import matplotlib.pyplot as plt
-import pandas as pd
 
 from ctg_viz.plots import barplots, boxplots, density, heatmap, histograms
-import ctg_viz as ctv
+import ctg_viz as ctv   ## Importar el módulo completo      NO BORRAR PQ SI NO DA ERROR
 from ctg_viz.utils import upload_and_process_data
 from ctg_viz.preprocessing import preprocessing
 from ctg_viz.categorization import check_data_completeness_Magdaleno_Flores_Nilton_Sebastian
+
 #Configuración de la página
 st.set_page_config(
     page_title="CTG Visualization",
@@ -55,18 +53,14 @@ if df_user is not None:
         col1, col2 = st.columns(2)
         with col1:
             st.markdown("### Gráfico de Barras")
-            barplots.bar_plot(df_preprocessed)
-            st.pyplot()
+            barplots.bar_plot_interactive(df_preprocessed)
             st.markdown("### Histograma")
-            histograms.histogram_plot(df_preprocessed)
-            st.pyplot() 
+            histograms.histogram_plot_interactive(df_preprocessed)
             st.markdown("### Gráfico de Caja")
-            boxplots.bx_plot(df_preprocessed)
-            st.pyplot()
+            boxplots.bx_plot_interactive(df_preprocessed)
         with col2:
             st.markdown("### Gráfico de Densidad")
             density.density_plot(df_preprocessed)
             st.pyplot()
             st.markdown("### Mapa de Calor")
-            heatmap.heatmap_plot(df_preprocessed)
-            st.pyplot()
+            heatmap.heatmap_plot_interactive(df_preprocessed)

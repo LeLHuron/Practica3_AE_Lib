@@ -10,7 +10,9 @@ setup(
         'pandas',
         'matplotlib',
         'pathlib',
-        'seaborn'
+        'seaborn',
+        'plotly',
+        'streamlit'
     ],
     description='Una descripción corta de mi paquete',
     author='Nilton Magdaleno',

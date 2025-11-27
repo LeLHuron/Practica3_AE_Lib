@@ -2,15 +2,19 @@ Metadata-Version: 2.4
 Name: mi_paquete
 Version: 0.1
 Summary: Una descripción corta de mi paquete
-Author: Tu Nombre
-Author-email: tu@email.com
+Author: Nilton Magdaleno
+Author-email: nilton_magdaleno@hotmail.com
+License-File: LICENSE
 Requires-Dist: requests
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: matplotlib
 Requires-Dist: pathlib
 Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: streamlit
 Dynamic: author
 Dynamic: author-email
+Dynamic: license-file
 Dynamic: requires-dist
 Dynamic: summary
